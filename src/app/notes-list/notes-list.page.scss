@@ -22,7 +22,7 @@ ion-item {
   height: 38px;
   border-bottom: none;
   text-align: center;
-  font-size: xx-large;
+  font-size: x-large;
   background-color: #3880ff;
   color: white;
 }
@@ -30,7 +30,7 @@ ion-item {
   text-align: center;
     font-family: monospace;
     width: 262px;
-    font-size: xx-large;
+    font-size: x-large;
 }
 #lt{
   margin-top: -50px;
@@ -58,7 +58,7 @@ body {
   background-color: rgba(0, 0, 0, 0.7);
 
   .update {
-    margin-left: 36%;
+    margin-left: 20%;
   }
 }
 
@@ -88,13 +88,11 @@ body {
   display: none;
 }
 
-.list:hover {
-
-  #del,
+.list:hover{  #del,
   #edi {
     display: inline-block;
-  }
-}
+  }}
+
 
 .dis {
   margin-top: 40px;
@@ -151,4 +149,6 @@ ion-lable {
   margin-left: 36%;
 }
 
-.buttons {}
+body{
+  background-image: url('https://images.pexels.com/photos/4668350/pexels-photo-4668350.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+}

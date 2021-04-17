@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { AlertController } from '@ionic/angular';
 
+
 @Component({
   selector: 'app-notes-list',
   templateUrl: './notes-list.page.html',
@@ -84,6 +85,11 @@ export class NotesListPage {
     this.editTitle = arr.title;
     this.editContent = arr.content;
     this.index = i;
+  }
+  closeEdit(){
+    this.editBx = {
+      display: 'none'
+    };
   }
 }
 
