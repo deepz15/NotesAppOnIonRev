@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      CREATE NOTES
+    </ion-title>
+    <ion-button id="lt" [routerLink]="['/notes-list']">LIST</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div id="container">
+    <ion-item id='title'>
+      <ion-input id="hmt" type="text" [(ngModel)]="notesTitleNg" placeholder="Title"></ion-input>
+    </ion-item>
+ 
+    <ion-item  id='content'>
+      <ion-textarea id="hmt" rows="20" cols="30" [(ngModel)]="notesContentNg" placeholder="Content here"></ion-textarea>
+      <br><br>
+    </ion-item>
+
+    <ion-item id='image'>
+    </ion-item>
+    <ion-button id='bt' *ngIf= 'saveButton' (click)='saveNotesData();' [routerLink]="['/notes-list']" >save</ion-button>
+  </div>
+</ion-content>

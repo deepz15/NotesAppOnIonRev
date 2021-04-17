@@ -1,0 +1,7 @@
+{
+  "name": "LastNotes",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

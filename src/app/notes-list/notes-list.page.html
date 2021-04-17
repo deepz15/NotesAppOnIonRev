@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title >NOTES-LIST</ion-title>
+    <ion-button id="lt" [routerLink]="['/home']">Home</ion-button>
+  </ion-toolbar>
+</ion-header> 
+
+<ion-content>
+  <div [ngStyle]="editBx" id="editBx">
+    <div class="inEdEl">
+      <input class="editInp" [(ngModel)]='editTitle' type="text">
+      <textarea class="editTarea" [(ngModel)]='editContent' name="" id="" cols="30" rows="10"></textarea>
+    </div>
+    <ion-button class="update" (click)=updateNotes();>Update</ion-button>
+  </div>
+  <div>
+    <input class="messageBox" type="text" value={{message}}>
+  </div>
+  <div cdkDrag class="list">
+    <div class="dis" *ngFor='let list of notesListArray; let i = index'>
+      <input class="title" type="text" value="Title : {{list.title}}">
+      <textarea class="content" cols="30" rows="10">{{list.content}}</textarea>
+      <ion-button id='del' (click)='showConfirmAlert();indexGetter(i)'>Del</ion-button>
+      <ion-button id='edi' (click)='editNotesOnList(i)'>Edi</ion-button>
+    </div>
+  </div>
+</ion-content>
